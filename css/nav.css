@@ -1,0 +1,118 @@
+
+
+nav{
+    background-color:rgb(108, 137, 195);
+ 
+   display: grid;
+   grid-template-columns: 1fr 4fr 4fr;
+   justify-content: center;
+   align-items: center;
+   border-bottom-style: inset;
+   border-bottom-color: rgb(37, 75, 124);
+   border-bottom-width: 5px ;
+   width: 100%;
+    
+}
+nav p{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+nav img{
+    text-align: center;
+    width: 100px;
+    margin-left: 30px;
+}
+
+#menu ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#menu ul li a:hover{
+    text-decoration: underline;
+}
+
+@media all and (max-width:800px){
+
+    nav{
+       display: grid;
+        grid-template-columns: 2fr 4fr 4fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav p{
+        margin-left: 10px;
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    nav img{
+        width: 30px;
+    }
+    #menu ul li a{
+        font-size: 0.7em;
+        white-space: nowrap;
+        
+    }
+
+    #menu ul li{
+        margin-left:10px ;
+        margin-right: 10px;
+    }
+}
+
+@media all and (max-width:500px){
+
+    nav{
+        
+        display: grid;
+        grid-template-columns: 0;
+        grid-template-rows: 1fr 1fr 4fr;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        height: max-content;
+        padding-top: 40px;
+       
+    }
+
+    nav p{
+        margin-left: 10px;
+        font-size: 1.5em;
+        white-space: nowrap;
+    }
+    nav img{
+        
+        width: 50px;
+        margin-left: 0px;
+    }
+
+    #menu ul{
+        margin-top: -80px;
+        display: block;
+        
+    }
+
+    #menu ul li a{
+        font-size: 1em;
+        white-space: nowrap;
+        
+    }
+
+    #menu ul li{
+        margin-top: 10px;
+    }
+}

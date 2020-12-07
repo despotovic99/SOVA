@@ -1,0 +1,98 @@
+.omotacGalerije{
+    width:540px;
+	margin:60px auto;
+	overflow:auto;
+	border: rgb(108, 136, 185) outset 5px;
+	border-radius: 20px;
+}
+
+.klizacUnutar{
+	width:500px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:5px;
+	
+}
+
+.klizacUnutar img{
+	display:none;
+	width:500px;
+	height:300px;
+}
+
+.klizacUnutar img.prikazana{
+	display:inline-block;
+}
+
+.prethodna,.sledeca{
+	float:left;
+	margin-top:130px;
+	cursor: pointer;
+}
+
+.prethodna{
+	position:relative;
+	margin-right:-45px;
+    z-index:100;
+    width: 60px;
+}
+
+.sledeca{
+	position:relative;
+	margin-left:-45px;
+    z-index:100;
+    width: 60px;
+}
+
+@media all and (max-width:550px){ 
+
+	.omotacGalerije{
+		width:66vw;
+		height: 38vw;
+		margin:60px auto;	
+		overflow: hidden;
+	}
+	
+	.klizacVan{
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+	.klizacUnutar{
+		width:60vw;
+		height:35vw;
+		padding: 5px;
+				
+	}
+	
+	.klizacUnutar img{
+		display: none;
+		width:60vw;
+		height:35vw;
+		
+	}
+
+	.prethodna,.sledeca{
+		float:left;
+		margin-top:25%;
+		cursor: pointer;
+		
+	}
+	
+	.prethodna{
+		position:relative;
+		margin-right:-45px;
+		z-index:100;
+		width: 40px;
+	}
+	
+	.sledeca{
+		position:relative;
+		margin-left:-45px;
+		z-index:100;
+		width: 40px;
+	}
+
+}   

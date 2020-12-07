@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logos/glavnilogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/kursevi.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <script> src="https://code.jquery.com/jquery-3.5.1.min.js"</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <title>Kursevi</title>
+</head>
+<body>
+
+    <nav> 
+        <a href="./index.html"><img src="./img/logos/glavnilogo.png" alt="No image"></a>
+        <p>Škola stranih jezika SOVA</p>
+        <div id="menu">
+            <ul>
+                <li><a href="./index.html">Početna</a></li>
+                <li><a href="./kursevi.html">Kursevi</a></li>
+                <li><a href="./Onama.html">O nama</a></li>
+                <li><a href="./Kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="roditelj">
+        <div id="naslov">
+            <h1>Kursevi</h1> <hr>
+        </div>
+
+    <div id="Engleski">
+        <img src="./img/kurs/London.jpg">
+        <p>
+        <h3>Engleski jezik</h3>
+        Nivo:A1, A2, B1, B2, C1, C2<br>
+        Cena:<br>
+        -grupna:3300 mesečno<br>
+        -individualna:30.000<br>
+    </p>
+    <h4>Welcome</h4> <button class="open-button" name="Engleski jezik" onclick="openForm()">Prijavi se!</button>
+    </div>
+
+    <div id="Nemački">
+        <img src="./img/kurs/Berllin.jpg">
+        <h3>Nemački jezik</h3>
+        <p>
+            Nivo:A1, A2, B1, B2, C1, C2<br>
+            Cena:<br>
+            -grupna:3500 mesečno<br>
+            -individualna:32.000<br>
+         </p>
+         <h4>Herzlich willkommen</h4> <button class="open-button" name="Nemački jezik" onclick="openForm()">Prijavi se!</button>
+    </div>
+
+    <div id="Turski">
+        <img src="./img/kurs/Istanbul.jpg">
+        <h3>Turski jezik</h3>
+        <p>
+            Nivo:A1, A2, B1, B2, C1, C2<br>
+            Cena:<br>
+            -grupna:3000 mesečno<br>
+            -individualna:28.000<br>
+        </p>
+        <h4>Hoşgeldiniz</h4> <button class="open-button" name="Turski jezik" onclick="openForm()">Prijavi se!</button>
+    </div>
+
+    <div id="Ruski">
+        <img src="./img/kurs/Moskva.jpg">
+        <h3>Ruski jezik</h3>
+        <p>
+            Nivo:B1, B2, C1, C2<br>
+            Cena:<br>
+            -grupna:3000 mesečno<br>
+            -individualna:28.000<br>
+        </p>
+        <h4>Добро пожаловать</h4> <button class="open-button" name="Ruski jezik" onclick="openForm()">Prijavi se!</button>
+    </div>
+
+    <div id="Španski">
+        <img src="./img/kurs/Madrid.jpg">
+        <h3>Španski jezik</h3>
+        <p>
+            Nivo:A1, A2, B1, B2, C1<br>
+            Cena:<br>
+            -grupna:2800 mesečno<br>
+            -individualna:27.000<br>
+        </p>
+        <h4>Bienvenido</h4> <button class="open-button" name="Španski jezik" onclick="openForm()">Prijavi se!</button>
+    </div>
+
+    <div id="Francuski">
+        <img src="./img/kurs/Pariz.jpg">
+        <h3>Francuski jezik</h3>
+        <p>
+            Nivo:A1, A2, B1, B2, C1, C2<br>
+            Cena:<br>
+            -grupna:3100 mesečno<br>
+            -individualna:30.000<br>
+        </p>
+        <h4>Bienvenue</h4> <button class="open-button" name="Francuski" onclick="openForm()">Prijavi se!</button>
+    </div>
+    </div>
+
+    
+    <div class="popup-prijava" id="popup" >
+        <form class="prijava-container" id="forma" action="">
+
+          <label  id= "ime" for="name">Ime i prezime</label>
+          <input type="text" name="ime" minlength="3" required>
+
+          <label id="email" for="email">Email</label>
+          <input type="email" name="email"  required>
+      
+          <label for="jezik">Jezik</label>
+          <input type="text" id ="jezikPolje" name="jezik">
+      
+          <button type="submit" class="btn" >Prijavi se</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Zatvori</button>
+        </form>
+      </div>
+
+<footer>
+    <div class="devTim">
+        <img src="./img/logos/logotima.png" alt="Logo dev tima">
+        <p>Copyright 2020</p>
+    </div>
+    
+    
+    <ul>
+        <li>
+       <a href="#"> <img src="./img/logos/facebook.png" alt="FbIcon"></a></li>
+        <li>
+        <a href="#"><img src="./img/logos/instagram.png" alt="Instagram icon"></a></li>
+    </ul>
+    </div>
+    
+</footer>
+
+<script src="./js/popup.js"></script>
+
+</body>
+</html>
